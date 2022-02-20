@@ -1,5 +1,4 @@
 let questions = Array.from(document.getElementsByClassName("question-wrapper"));
-let images = document.getElementsByClassName("image-container")[0];
 
 let arr = ["You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.", "No more than 2GB. All files in your account must fit your allotted storage space.",
             "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.",
@@ -27,15 +26,3 @@ for(let i = 0; i<questions.length; i++){
         }
     }); 
 };
-
-if(window.screen.width < 1080){
-    new_el = document.createElement("img");
-    new_el1 = document.createElement("img");
-    new_el.setAttribute("src","./images/bg-pattern-mobile.svg")
-    new_el1.setAttribute("src","./images/illustration-woman-online-mobile.svg")
-    new_el.classList.add("mobile-bg");
-    new_el1.classList.add("mobile-img");
-    images.appendChild(new_el);
-    images.appendChild(new_el1);
-
-}
